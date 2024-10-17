@@ -7,13 +7,18 @@
     --error-color: #cf6679;
 }
 
+/* Showcase CSS box model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
 .container {
@@ -32,17 +37,19 @@ header {
     z-index: 1000;
 }
 
+/* Showcase flexbox container */
 nav ul {
     list-style-type: none;
-    padding: 0;
     display: flex;
     justify-content: center;
 }
 
+/* Showcase flex items */
 nav ul li {
     margin: 0 15px;
 }
 
+/* Showcase pseudo-classes & links */
 nav ul li a {
     color: var(--text-color);
     text-decoration: none;
@@ -54,11 +61,20 @@ nav ul li a:hover {
     color: var(--accent-color);
 }
 
+nav ul li a:active {
+    color: var(--secondary-color);
+}
+
+nav ul li a:visited {
+    color: var(--text-color);
+}
+
 /* Main Content Styles */
 main {
     padding-top: 80px;
 }
 
+/* Showcase block elements */
 section {
     padding: 4rem 2rem;
     margin-bottom: 2rem;
@@ -78,13 +94,18 @@ h2 {
     margin-bottom: 1rem;
 }
 
+/* Showcase inline-block elements */
+.inline-block-example {
+    display: inline-block;
+    margin-right: 10px;
+}
+
 /* Skills Section */
 #skills ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
-    padding: 0;
 }
 
 #skills li {
@@ -185,6 +206,30 @@ footer {
     color: var(--secondary-color);
 }
 
+/* Showcase float and clear */
+.float-example {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.clear-example {
+    clear: both;
+}
+
+/* Showcase grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Showcase overflow */
+.overflow-example {
+    height: 100px;
+    overflow: auto;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
@@ -199,4 +244,29 @@ footer {
     .container {
         width: 95%;
     }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Showcase CSS comments */
+/* This is a CSS comment */
+
+/* Showcase CSS type selector */
+p {
+    margin-bottom: 1em;
+}
+
+/* Showcase CSS class selector */
+.highlight {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    padding: 5px;
+}
+
+/* Showcase CSS id selector */
+#main-title {
+    font-size: 4em;
+    text-align: center;
 }
