@@ -13,14 +13,7 @@
             <ul class="main-nav">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
-                <li class="dropdown">
-                    <a href="#" class="nav-link">Menu</a>
-                    <ul class="dropdown-content">
-                        <li><a href="seafood-menu.html">Seafood Delights</a></li>
-                        <li><a href="mountain-menu.html">Mountain Flavors</a></li>
-                        <li><a href="pizza-menu.html">Gourmet Pizza</a></li>
-                    </ul>
-                </li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
                 <li><a href="experience.html" class="nav-link">Experience</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
@@ -28,51 +21,75 @@
     </header>
 
     <main>
-        <section id="home">
-            <div class="hero">
+        <section id="hero" class="hero">
+            <div class="hero-content">
                 <h1 class="chef-name">Marco Rossi</h1>
                 <p class="chef-title">Italian Culinary Artist</p>
+                <a href="#about" class="cta-button">Discover My Passion</a>
             </div>
         </section>
 
-        <section id="featured-menus">
+        <section id="about" class="about-section">
             <div class="container">
-                <h2 class="section-title">Our Signature Menus</h2>
-                
-                <div class="menu-grid">
-                    <div class="menu-category">
-                        <img src="https://source.unsplash.com/800x600/?seafood" alt="Seafood Menu" class="menu-image">
-                        <h3>Seafood Delights</h3>
-                        <ul>
-                            <li>Frutti di Mare Linguine</li>
-                            <li>Polpo alla Griglia</li>
-                            <li>Risotto ai Frutti di Mare</li>
-                        </ul>
-                        <a href="seafood-menu.html" class="menu-link">View Full Menu</a>
-                    </div>
-
-                    <div class="menu-category">
-                        <img src="https://source.unsplash.com/800x600/?mountain-food" alt="Mountain Menu" class="menu-image">
-                        <h3>Mountain Flavors</h3>
-                        <ul>
-                            <li>Spezzatino di Manzo</li>
-                            <li>Fonduta Valdostana</li>
-                            <li>Risotto ai Funghi Porcini</li>
-                        </ul>
-                        <a href="mountain-menu.html" class="menu-link">View Full Menu</a>
-                    </div>
-
-                    <div class="menu-category">
-                        <img src="https://source.unsplash.com/800x600/?gourmet-pizza" alt="Gourmet Pizza Menu" class="menu-image">
-                        <h3>Gourmet Pizza</h3>
-                        <ul>
-                            <li>Pizza al Tartufo</li>
-                            <li>Pizza Prosciutto e Fichi</li>
-                            <li>Pizza Frutti di Mare</li>
-                        </ul>
-                        <a href="pizza-menu.html" class="menu-link">View Full Menu</a>
+                <h2 class="section-title">Meet Chef Marco</h2>
+                <div class="chef-intro">
+                    <img src="https://source.unsplash.com/800x600/?chef" alt="Chef Marco Rossi" class="chef-image">
+                    <div class="chef-bio">
+                        <p>With over 20 years of culinary expertise, Chef Marco Rossi brings the authentic flavors of Italy to your plate. His passion for combining traditional techniques with innovative twists has earned him international acclaim.</p>
+                        <blockquote>"Cooking is not just about ingredients; it's a way of making somebody feel loved." - Marco Rossi</blockquote>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="specialties" class="specialties-section">
+            <div class="container">
+                <h2 class="section-title">Culinary Specialties</h2>
+                <div class="specialty-grid">
+                    <div class="specialty-card">
+                        <img src="https://source.unsplash.com/800x600/?seafood" alt="Seafood Specialties">
+                        <h3>Seafood Delights</h3>
+                        <p>Experience the freshest catches from the Mediterranean, expertly prepared to tantalize your taste buds.</p>
+                    </div>
+                    <div class="specialty-card">
+                        <img src="https://source.unsplash.com/800x600/?mountain-food" alt="Mountain Cuisine">
+                        <h3>Mountain Flavors</h3>
+                        <p>Savor the rich and hearty tastes of Italian mountain cuisine, crafted with locally-sourced ingredients.</p>
+                    </div>
+                    <div class="specialty-card">
+                        <img src="https://source.unsplash.com/800x600/?gourmet-pizza" alt="Gourmet Pizza">
+                        <h3>Gourmet Pizza</h3>
+                        <p>Indulge in our artisanal pizzas, featuring unique combinations of premium ingredients on a perfect crust.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">What People Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial">
+                        <p>"Chef Marco's creations are a journey through the flavors of Italy. Simply unforgettable!"</p>
+                        <cite>- Maria Bianchi, Food Critic</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"The attention to detail in every dish is remarkable. A true culinary artist!"</p>
+                        <cite>- John Smith, Michelin Guide Inspector</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Marco's innovative approach to traditional Italian cuisine is a breath of fresh air."</p>
+                        <cite>- Laura Rossi, Celebrity Chef</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="cta-section">
+            <div class="container">
+                <h2>Experience the Magic of Italian Cuisine</h2>
+                <p>Join us for an unforgettable culinary journey</p>
+                <a href="contact.html" class="cta-button">Make a Reservation</a>
             </div>
         </section>
     </main>
