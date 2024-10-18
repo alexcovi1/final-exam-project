@@ -3,124 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Professional Portfolio</title>
+    <title>Chef Marco Rossi - Italian Culinary Artist</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Showcase external CSS linking -->
-    <style>
-        /* Showcase internal CSS */
-        .internal-style {
-            font-weight: bold;
-            color: #03dac6;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="page2.html">Page 2</a></li> <!-- Showcase multi-page navigation -->
+            <ul class="main-nav">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Menu</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#seafood">Seafood Delights</a></li>
+                        <li><a href="#mountain">Mountain Flavors</a></li>
+                        <li><a href="#pizza">Gourmet Pizza</a></li>
+                    </ul>
+                </li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Showcase block element -->
         <section id="home">
-            <h1>Your Name</h1>
-            <p>Web Developer & Designer</p>
-            <!-- Showcase inline CSS -->
-            <p style="color: #bb86fc;">Passionate about creating beautiful and functional websites</p>
-        </section>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I'm a passionate web developer with a keen eye for design and a love for creating seamless user experiences. With a background in both front-end and back-end technologies, I bring a holistic approach to every project I undertake.</p>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>SQL</li>
-                <li>Git</li>
-                <li>Responsive Design</li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>E-commerce Platform</h3>
-                <p>A fully responsive online store with user authentication and payment integration.</p>
-                <a href="#project1" class="project-link">Learn More</a>
-            </div>
-            <div class="project">
-                <h3>Task Management App</h3>
-                <p>A React-based application for efficient task organization and team collaboration.</p>
-                <a href="#project2" class="project-link">Learn More</a>
-            </div>
-            <div class="project">
-                <h3>Portfolio Website</h3>
-                <p>A customizable portfolio template for creative professionals.</p>
-                <a href="#project3" class="project-link">Learn More</a>
+            <div class="hero">
+                <h1 class="chef-name">Marco Rossi</h1>
+                <p class="chef-title">Italian Culinary Artist</p>
             </div>
         </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="job">
-                <h3>Senior Web Developer - Tech Solutions Inc.</h3>
-                <p>2020 - Present</p>
-                <ul>
-                    <li>Lead a team of developers in creating responsive web applications</li>
-                    <li>Implemented best practices for code quality and performance optimization</li>
-                </ul>
+        <section id="featured-menus">
+            <div class="container">
+                <h2 class="section-title">Our Signature Menus</h2>
+                
+                <div id="seafood" class="menu-section">
+                    <h3>Seafood Delights</h3>
+                    <div class="menu-carousel">
+                        <div class="menu-item">
+                            <img src="https://source.unsplash.com/800x600/?seafood-pasta" alt="Seafood Pasta" class="dish-image">
+                            <h4>Frutti di Mare Linguine</h4>
+                            <p>Fresh linguine with a medley of seafood in a light tomato sauce</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://source.unsplash.com/800x600/?grilled-octopus" alt="Grilled Octopus" class="dish-image">
+                            <h4>Polpo alla Griglia</h4>
+                            <p>Tender grilled octopus with lemon, herbs, and olive oil</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://source.unsplash.com/800x600/?seafood-risotto" alt="Seafood Risotto" class="dish-image">
+                            <h4>Risotto ai Frutti di Mare</h4>
+                            <p>Creamy risotto with an assortment of fresh seafood</p>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev">&lt;</button>
+                    <button class="carousel-btn next">&gt;</button>
+                </div>
+
+                <div id="mountain" class="menu-section">
+                    <h3>Mountain Flavors</h3>
+                    <div class="menu-carousel">
+                        <div class="menu-item">
+                            <img src="https://source.unsplash.com/800x600/?beef-stew" alt="Beef Stew" class="dish-image">
+                            <h4>Spezzatino di Manzo</h4>
+                            <p>Hearty beef stew with root vegetables and polenta</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://source.unsplash.com/800x600/?cheese-fondue" alt="Cheese Fondue" class="dish-image">
+                            <h4>Fonduta Valdostana</h4>
+                            <p>Alpine cheese fondue with crusty bread and cured meats</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://source.unsplash.com/800x600/?mushroom-risotto" alt="Mushroom Risotto" class="dish-image">
+                            <h4>Risotto ai Funghi Porcini</h4>
+                            <p>Creamy risotto with fresh porcini mushrooms</p>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev">&lt;</button>
+                    <button class="carousel-btn next">&gt;</button>
+                </div>
+
+                <div id="pizza" class="menu-section">
+                    <h3>Gourmet Pizza</h3>
+                    <div class="menu-carousel">
+                        <div class="menu-item">
+                            <img src="https://source.unsplash.com/800x600/?truffle-pizza" alt="Truffle Pizza" class="dish-image">
+                            <h4>Pizza al Tartufo</h4>
+                            <p>Thin-crust pizza with fresh mozzarella, porcini mushrooms, and truffle shavings</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://source.unsplash.com/800x600/?prosciutto-pizza" alt="Prosciutto Pizza" class="dish-image">
+                            <h4>Pizza Prosciutto e Fichi</h4>
+                            <p>Gourmet pizza with prosciutto, fresh figs, and gorgonzola cheese</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://source.unsplash.com/800x600/?seafood-pizza" alt="Seafood Pizza" class="dish-image">
+                            <h4>Pizza Frutti di Mare</h4>
+                            <p>Deluxe seafood pizza with fresh catch of the day and herbs</p>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev">&lt;</button>
+                    <button class="carousel-btn next">&gt;</button>
+                </div>
             </div>
-            <div class="job">
-                <h3>Web Developer - Digital Creations Co.</h3>
-                <p>2017 - 2020</p>
-                <ul>
-                    <li>Developed and maintained client websites using HTML, CSS, and JavaScript</li>
-                    <li>Collaborated with designers to implement visually appealing and functional interfaces</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <p>&copy; 2023 Chef Marco Rossi. All rights reserved.</p>
         <div class="social-links">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://instagram.com/chefmarcorossi" target="_blank" rel="noopener noreferrer" class="social-icon">Instagram</a>
+            <a href="https://facebook.com/chefmarcorossi" target="_blank" rel="noopener noreferrer" class="social-icon">Facebook</a>
+            <a href="https://twitter.com/chefmarcorossi" target="_blank" rel="noopener noreferrer" class="social-icon">Twitter</a>
         </div>
     </footer>
+
+    <script>
+        $(document).ready(function() {
+            // Dropdown menu functionality
+            $('.dropdown').hover(
+                function() {
+                    $(this).find('.dropdown-content').show();
+                },
+                function() {
+                    $(this).find('.dropdown-content').hide();
+                }
+            );
+
+            // Carousel functionality
+            $('.menu-section').each(function() {
+                var $carousel = $(this).find('.menu-carousel');
+                var $items = $carousel.find('.menu-item');
+                var currentIndex = 0;
+
+                $(this).find('.next').click(function() {
+                    currentIndex = (currentIndex + 1) % $items.length;
+                    updateCarousel();
+                });
+
+                $(this).find('.prev').click(function() {
+                    currentIndex = (currentIndex - 1 + $items.length) % $items.length;
+                    updateCarousel();
+                });
+
+                function updateCarousel() {
+                    $items.hide().eq(currentIndex).fadeIn();
+                }
+
+                // Show the first item initially
+                $items.hide().eq(0).show();
+            });
+        });
+    </script>
 </body>
-</html>
 </html>
