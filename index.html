@@ -6,7 +6,6 @@
     <title>Chef Marco Rossi - Italian Culinary Artist</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
@@ -17,9 +16,9 @@
                 <li class="dropdown">
                     <a href="#" class="nav-link">Menu</a>
                     <ul class="dropdown-content">
-                        <li><a href="#seafood">Seafood Delights</a></li>
-                        <li><a href="#mountain">Mountain Flavors</a></li>
-                        <li><a href="#pizza">Gourmet Pizza</a></li>
+                        <li><a href="seafood-menu.html">Seafood Delights</a></li>
+                        <li><a href="mountain-menu.html">Mountain Flavors</a></li>
+                        <li><a href="pizza-menu.html">Gourmet Pizza</a></li>
                     </ul>
                 </li>
                 <li><a href="experience.html" class="nav-link">Experience</a></li>
@@ -40,73 +39,39 @@
             <div class="container">
                 <h2 class="section-title">Our Signature Menus</h2>
                 
-                <div id="seafood" class="menu-section">
-                    <h3>Seafood Delights</h3>
-                    <div class="menu-carousel">
-                        <div class="menu-item">
-                            <img src="https://source.unsplash.com/800x600/?seafood-pasta" alt="Seafood Pasta" class="dish-image">
-                            <h4>Frutti di Mare Linguine</h4>
-                            <p>Fresh linguine with a medley of seafood in a light tomato sauce</p>
-                        </div>
-                        <div class="menu-item">
-                            <img src="https://source.unsplash.com/800x600/?grilled-octopus" alt="Grilled Octopus" class="dish-image">
-                            <h4>Polpo alla Griglia</h4>
-                            <p>Tender grilled octopus with lemon, herbs, and olive oil</p>
-                        </div>
-                        <div class="menu-item">
-                            <img src="https://source.unsplash.com/800x600/?seafood-risotto" alt="Seafood Risotto" class="dish-image">
-                            <h4>Risotto ai Frutti di Mare</h4>
-                            <p>Creamy risotto with an assortment of fresh seafood</p>
-                        </div>
+                <div class="menu-grid">
+                    <div class="menu-category">
+                        <img src="https://source.unsplash.com/800x600/?seafood" alt="Seafood Menu" class="menu-image">
+                        <h3>Seafood Delights</h3>
+                        <ul>
+                            <li>Frutti di Mare Linguine</li>
+                            <li>Polpo alla Griglia</li>
+                            <li>Risotto ai Frutti di Mare</li>
+                        </ul>
+                        <a href="seafood-menu.html" class="menu-link">View Full Menu</a>
                     </div>
-                    <button class="carousel-btn prev">&lt;</button>
-                    <button class="carousel-btn next">&gt;</button>
-                </div>
 
-                <div id="mountain" class="menu-section">
-                    <h3>Mountain Flavors</h3>
-                    <div class="menu-carousel">
-                        <div class="menu-item">
-                            <img src="https://source.unsplash.com/800x600/?beef-stew" alt="Beef Stew" class="dish-image">
-                            <h4>Spezzatino di Manzo</h4>
-                            <p>Hearty beef stew with root vegetables and polenta</p>
-                        </div>
-                        <div class="menu-item">
-                            <img src="https://source.unsplash.com/800x600/?cheese-fondue" alt="Cheese Fondue" class="dish-image">
-                            <h4>Fonduta Valdostana</h4>
-                            <p>Alpine cheese fondue with crusty bread and cured meats</p>
-                        </div>
-                        <div class="menu-item">
-                            <img src="https://source.unsplash.com/800x600/?mushroom-risotto" alt="Mushroom Risotto" class="dish-image">
-                            <h4>Risotto ai Funghi Porcini</h4>
-                            <p>Creamy risotto with fresh porcini mushrooms</p>
-                        </div>
+                    <div class="menu-category">
+                        <img src="https://source.unsplash.com/800x600/?mountain-food" alt="Mountain Menu" class="menu-image">
+                        <h3>Mountain Flavors</h3>
+                        <ul>
+                            <li>Spezzatino di Manzo</li>
+                            <li>Fonduta Valdostana</li>
+                            <li>Risotto ai Funghi Porcini</li>
+                        </ul>
+                        <a href="mountain-menu.html" class="menu-link">View Full Menu</a>
                     </div>
-                    <button class="carousel-btn prev">&lt;</button>
-                    <button class="carousel-btn next">&gt;</button>
-                </div>
 
-                <div id="pizza" class="menu-section">
-                    <h3>Gourmet Pizza</h3>
-                    <div class="menu-carousel">
-                        <div class="menu-item">
-                            <img src="https://source.unsplash.com/800x600/?truffle-pizza" alt="Truffle Pizza" class="dish-image">
-                            <h4>Pizza al Tartufo</h4>
-                            <p>Thin-crust pizza with fresh mozzarella, porcini mushrooms, and truffle shavings</p>
-                        </div>
-                        <div class="menu-item">
-                            <img src="https://source.unsplash.com/800x600/?prosciutto-pizza" alt="Prosciutto Pizza" class="dish-image">
-                            <h4>Pizza Prosciutto e Fichi</h4>
-                            <p>Gourmet pizza with prosciutto, fresh figs, and gorgonzola cheese</p>
-                        </div>
-                        <div class="menu-item">
-                            <img src="https://source.unsplash.com/800x600/?seafood-pizza" alt="Seafood Pizza" class="dish-image">
-                            <h4>Pizza Frutti di Mare</h4>
-                            <p>Deluxe seafood pizza with fresh catch of the day and herbs</p>
-                        </div>
+                    <div class="menu-category">
+                        <img src="https://source.unsplash.com/800x600/?gourmet-pizza" alt="Gourmet Pizza Menu" class="menu-image">
+                        <h3>Gourmet Pizza</h3>
+                        <ul>
+                            <li>Pizza al Tartufo</li>
+                            <li>Pizza Prosciutto e Fichi</li>
+                            <li>Pizza Frutti di Mare</li>
+                        </ul>
+                        <a href="pizza-menu.html" class="menu-link">View Full Menu</a>
                     </div>
-                    <button class="carousel-btn prev">&lt;</button>
-                    <button class="carousel-btn next">&gt;</button>
                 </div>
             </div>
         </section>
@@ -120,43 +85,5 @@
             <a href="https://twitter.com/chefmarcorossi" target="_blank" rel="noopener noreferrer" class="social-icon">Twitter</a>
         </div>
     </footer>
-
-    <script>
-        $(document).ready(function() {
-            // Dropdown menu functionality
-            $('.dropdown').hover(
-                function() {
-                    $(this).find('.dropdown-content').show();
-                },
-                function() {
-                    $(this).find('.dropdown-content').hide();
-                }
-            );
-
-            // Carousel functionality
-            $('.menu-section').each(function() {
-                var $carousel = $(this).find('.menu-carousel');
-                var $items = $carousel.find('.menu-item');
-                var currentIndex = 0;
-
-                $(this).find('.next').click(function() {
-                    currentIndex = (currentIndex + 1) % $items.length;
-                    updateCarousel();
-                });
-
-                $(this).find('.prev').click(function() {
-                    currentIndex = (currentIndex - 1 + $items.length) % $items.length;
-                    updateCarousel();
-                });
-
-                function updateCarousel() {
-                    $items.hide().eq(currentIndex).fadeIn();
-                }
-
-                // Show the first item initially
-                $items.hide().eq(0).show();
-            });
-        });
-    </script>
 </body>
 </html>
