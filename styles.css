@@ -73,6 +73,15 @@ main {
 
 /* Home Page Styles */
 /* Updated Hero Section Styles */
+
+#hero {
+    background-image: url('images/toscana2.png'); /* Percorso dell'immagine */
+    background-size: cover; /* L'immagine coprirà l'intera sezione */
+    background-position: center; /* L'immagine sarà centrata */
+    background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+    padding: 100px 0; /* Aggiungi padding per dare spazio verticale */
+    color: white; /* Imposta il testo in bianco per contrastare con l'immagine */
+}
 .hero {
     background-image: url('https://source.unsplash.com/1600x900/?italian-restaurant');
     background-size: cover;
