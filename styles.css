@@ -360,6 +360,10 @@ blockquote {
     background-color: var(--secondary-color);
 }
 
+.dropdown:hover .dropdown-content {
+    display: block; /* Mostra il dropdown al passaggio del mouse */
+}
+
 /* Featured Menus Styles */
 #featured-menus {
     padding: 2rem 0;
