@@ -1,12 +1,16 @@
 # final-exam-project
 
+## Project Description
+
+This website serves as a portfolio for Chef Marco Rossi, highlighting his Italian culinary artistry. It includes sections for his biography, professional experience, and menus, all displayed in a user-friendly and responsive design.
+
 # Chef Marco Rossi Portfolio Website
 
-This project is a portfolio website for Chef Marco Rossi, an Italian culinary artist. The website showcases his expertise, menus, and provides information about his culinary journey.
+Welcome to the portfolio website for Chef Marco Rossi, an Italian culinary artist. This project showcases his expertise through menus, his professional journey, and a contact section for reservations.
 
 ## Project Structure
+
 italian-chef-portfolio/
-│
 ├── index.html
 ├── about.html
 ├── menu.html
@@ -16,7 +20,7 @@ italian-chef-portfolio/
 ├── mountain-menu.html
 ├── pizza-menu.html
 ├── styles.css
-├── images
+├── images/
 └── README.md
 
 
@@ -55,6 +59,17 @@ cd italian-chef-portfolio
 5. **Contact (contact.html)**: Contact form and information for reservations and inquiries.
 6. **Individual Menu Pages**: Separate pages for Seafood, Mountain, and Gourmet Pizza menus.
 
+## How to Use and Navigate
+
+- Open `index.html` in your browser to start from the homepage.
+- Use the navigation bar at the top to explore different sections of the site:
+  - **Home**: Overview of Chef Marco Rossi, featured menus, and introduction.
+  - **About**: Detailed biography of the chef.
+  - **Menu**: Explore the different menu categories, with links to the individual menu pages (Seafood, Mountain, and Gourmet Pizza).
+  - **Experience**: Discover the chef’s career timeline and notable achievements.
+  - **Contact**: Use the form to make inquiries or reservations.
+- The site is fully responsive and can be viewed on desktop, tablet, or mobile devices.
+
 ## Responsive Design
 
 The website is fully responsive and optimized for various screen sizes:
@@ -69,4 +84,6 @@ The website is fully responsive and optimized for various screen sizes:
 - Custom properties (variables) for consistent theming
 - Media queries for responsive breakpoints
 
+## Author
 
+- **Alexander Covi** - Developer and Designer of the project
