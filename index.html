@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
     <header>
         <nav>
             <ul class="main-nav">
@@ -39,23 +40,28 @@
                 <a href="#about" class="cta-button">Discover My Passion</a>
             </div>
         </section>
-
         <section id="about" class="about-section">
             <div class="container">
                 <h2 class="section-title">Meet Chef Marco</h2>
                 <div class="chef-intro">
-                    <img src="images/chef1.jpg" alt="Chef Marco Rossi" class="chef-image">
+                    <!-- Added float-element class for the image -->
+                    <img src="images/chef1.jpg" alt="Chef Marco Rossi" id="chef-image" class="float-element">
                     <div class="chef-bio">
-                        <p>With over 20 years of culinary expertise, Chef Marco Rossi brings the authentic flavors of
+                        <!-- Using inline style for CSS inline display -->
+                        <p style=" font-family: Arial, sans-serif; color: black; font-size: 18px; text-align: justify; line-height: 1.6;">
+                            With over 20 years of culinary expertise, Chef Marco Rossi brings the authentic flavors of
                             Italy to your plate. His passion for combining traditional techniques with innovative twists
                             has earned him international acclaim.</p>
                         <blockquote>"Cooking is not just about ingredients; it's a way of making somebody feel loved." -
                             Marco Rossi</blockquote>
                     </div>
                 </div>
+                <!-- Added clear-element to clear the float -->
+                <div class="clear-element"></div>
             </div>
         </section>
 
+        <!-- three menu landing page -->
         <section id="specialties" class="specialties-section">
             <div class="container">
                 <h2 class="section-title">Culinary Specialties</h2>
@@ -118,12 +124,9 @@
     <footer>
         <p>&copy; 2023 Chef Marco Rossi. All rights reserved.</p>
         <div class="social-links">
-            <a href="https://instagram.com/chefmarcorossi" target="_blank" rel="noopener noreferrer"
-                class="social-icon">Instagram</a>
-            <a href="https://facebook.com/chefmarcorossi" target="_blank" rel="noopener noreferrer"
-                class="social-icon">Facebook</a>
-            <a href="https://twitter.com/chefmarcorossi" target="_blank" rel="noopener noreferrer"
-                class="social-icon">Twitter</a>
+            <a href="https://instagram.com/chefmarcorossi" rel="noopener noreferrer" class="social-icon">Instagram</a>
+            <a href="https://facebook.com/chefmarcorossi" rel="noopener noreferrer" class="social-icon">Facebook</a>
+            <a href="https://twitter.com/chefmarcorossi" rel="noopener noreferrer" class="social-icon">Twitter</a>
         </div>
     </footer>
 </body>
