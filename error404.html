@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Page Not Found | Chef Marco Rossi</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <style>
         .error-container {
             display: flex;
@@ -16,21 +19,25 @@
             text-align: center;
             padding: 0 20px;
         }
+
         .error-code {
             font-size: 120px;
             font-weight: bold;
             color: var(--primary-color);
             margin-bottom: 20px;
         }
+
         .error-message {
             font-size: 24px;
             margin-bottom: 30px;
         }
+
         .error-description {
             font-size: 18px;
             margin-bottom: 30px;
             max-width: 600px;
         }
+
         .home-button {
             display: inline-block;
             background-color: var(--accent-color);
@@ -41,17 +48,89 @@
             font-weight: bold;
             transition: background-color 0.3s ease;
         }
+
         .home-button:hover {
             background-color: var(--primary-color);
         }
+
+        /* Float elements */
+        .float-box {
+            width: 200px;
+            height: 100px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            float: left;
+            margin: 10px;
+            
+        }
+
+        /* Float elements */
+        .float-box2 {
+            width: 200px;
+            height: 100px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            float: right;
+            margin: 10px;
+        }
+
+        /* Clear both class */
+        .clear-both {
+            clear: both;
+        }
+
+        /* Additional styles for the flexbox */
+        .flex-container {
+            display: flex;
+            /* Enables Flexbox */
+            justify-content: space-around;
+            /* Distributes space around items */
+            background-color: #FFF8DC;
+        }
+
+        .flex-item {
+            background-color: #4CAF50;
+            /* Green background */
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            flex: 1;
+            /* Each item grows equally */
+            margin: 10px;
+            /* Adds space between items */
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
     <div class="error-container">
         <div class="error-code">404</div>
         <h1 class="error-message">Oops! Page Not Found</h1>
-        <p class="error-description">It seems the recipe you're looking for has gone missing from our menu. Don't worry, we have plenty of other delicious pages for you to explore!</p>
-        <a href="index.html" class="home-button">Return to Home</a>
+        <p class="error-description">It seems the recipe you're looking for has gone missing from our menu. Don't worry,
+            we have plenty of other delicious pages for you to explore!</p>
     </div>
+
+    <!-- Float boxes for demonstration -->
+    <div class="float-box"> error 404</div>
+    <div class="float-box2">error 404</div>
+
+    <!-- Clear both floats -->
+    <div class="clear-both"></div>
+
+    <!-- Flexbox Container with Buttons -->
+    <div class="flex-container">
+        <a href="index.html" class="home-button flex-item">Return to Home</a>
+        <a href="menu.html" class="home-button flex-item">Go to Menu</a>
+        <a href="contact.html" class="home-button flex-item">Contact Me</a>
+    </div>
+
+
+
 </body>
+
 </html>
