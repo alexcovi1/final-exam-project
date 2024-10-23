@@ -149,6 +149,7 @@ main {
     border-radius: 50%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    
 }
 
 #chef-image:hover {
@@ -157,12 +158,14 @@ main {
 
 .chef-bio {
     flex: 1;
+
 }
 
 .chef-bio p {
     display: inline;
     margin-bottom: 1rem;
     line-height: 1.6;
+    
 
 }
 
@@ -286,13 +289,14 @@ blockquote {
 }
 
 .cta-button {
-    display: inline-block;
+    /*display: inline-block;*/
     background-color: #FF6347;
     color: white;
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    height: 55px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -629,6 +633,9 @@ footer {
     color: rgb(255, 0, 157);
 }
 
+.social-icon:link{
+    display: inline;
+}
 .social-icon {
     text-decoration: none;
     margin: 0 10px;
